@@ -1,0 +1,16 @@
+.elevator {
+    height: 95%;
+    transition: 1s;
+}
+
+.up {
+    height: 95%;
+    transition: 1s;
+    transform: translateY(-100px);
+}
+
+.down {
+    height: 95%;
+    transform: translateY(100px);
+    transition: 1s;
+}

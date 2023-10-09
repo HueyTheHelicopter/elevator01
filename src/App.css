@@ -2,37 +2,51 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.building {
+  background-image: url('./images/buildingWall.png');
+  width:fit-content;
+  border-bottom: 10px solid #2d1c09;
+  background-size: 15%;
+  box-shadow: 13px -10px 10px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.floor {
+  background-color: #282c34;
+  height: 100px;
+  margin-bottom: 3px solid #371a03;
+}
+
+.floor.col {
+  font-family: "Arial Black", Times, serif;
+  display: flex;
+  border-bottom: 7px solid #2b1503;
+  border-left: 3px solid #391205;
+  border-top: 3px solid #391205;
+  border-right: 3px solid #391205;
+  height: 100%;
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+}
+
+.floor.elevator.col {
+  background-image: url('./images/brickwall1.png');
+  background-size: 30%;
+  width: 25%;
+}
+
+.elevator.container {
+  margin-top: 3px;
+  width: 40%;
+  height: 100%;
 }
